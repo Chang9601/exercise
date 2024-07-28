@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef unsigned char* byte_pointer;
+typedef unsigned char* byte_ptr;
 
 void
-show_bytes(byte_pointer start, size_t len)
+show_bytes(byte_ptr start, size_t len)
 {
   size_t i;
 
@@ -17,19 +17,19 @@ show_bytes(byte_pointer start, size_t len)
 void 
 show_short(short x)
 {
-  show_bytes((byte_pointer)&x, sizeof(x));
+  show_bytes((byte_ptr)&x, sizeof(x));
 }
 
 void
 show_long(long x)
 {
-  show_bytes((byte_pointer)&x, sizeof(x));
+  show_bytes((byte_ptr)&x, sizeof(x));
 }
 
 void
 show_double(double x)
 {
-  show_bytes((byte_pointer)&x, sizeof(x));
+  show_bytes((byte_ptr)&x, sizeof(x));
 }
 
 void 

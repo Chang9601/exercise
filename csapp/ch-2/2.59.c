@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-typedef unsigned char* byte_pointer;
+typedef unsigned char* byte_ptr;
 
 void
-show_bytes(byte_pointer start, size_t len)
+show_bytes(byte_ptr start, size_t len)
 {
   size_t i;
 
@@ -18,7 +18,7 @@ show_bytes(byte_pointer start, size_t len)
 void
 show_int(int x)
 {
-  show_bytes((byte_pointer)&x, sizeof(x));
+  show_bytes((byte_ptr)&x, sizeof(x));
 }
 
 void 
