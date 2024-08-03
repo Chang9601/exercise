@@ -4,9 +4,9 @@ FLAG32=-m32
 FLAG64=-m64
 DEBUG=debug
 TOOL=valgrind
-SRC=2.64.c
-OBJ=2.64.o
-EXE=2.64
+SRC=2.65.c
+OBJ=2.65.o
+EXE=2.65
 
 all: $(EXE)
 
