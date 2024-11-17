@@ -1,0 +1,4 @@
+#ifndef TYPE
+typedef A B
+#define TYPE
+#endif
